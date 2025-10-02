@@ -1,0 +1,117 @@
+/* Reset dasar dan pengaturan umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Gaya untuk kartu profil */
+.kartu.profile {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.kartu.profile:hover {
+    transform: translateY(-5px);
+}
+
+/* Gaya gambar profil */
+.kartu.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f0f0f0;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya judul nama */
+.kartu.profile h1 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Gaya paragraf deskripsi */
+.kartu.profile p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Gaya tautan */
+.kartu.profile a {
+    display: inline-block;
+    text-decoration: none;
+    color: #2575fc;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #eef5ff;
+    transition: all 0.3s ease;
+}
+
+.kartu.profile a:hover {
+    background-color: #2575fc;
+    color: white;
+}
+
+/* Gaya tombol */
+#sapaButton {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#sapaButton:hover {
+    background-color: #5a0db9;
+    transform: scale(1.05);
+}
+
+#sapaButton:active {
+    transform: scale(0.98);
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 480px) {
+    .kartu.profile {
+        padding: 20px;
+    }
+
+    .kartu.profile h1 {
+        font-size: 1.4rem;
+    }
+
+    .kartu.profile img {
+        width: 100px;
+        height: 100px;
+    }
+}
